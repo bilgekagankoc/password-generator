@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/ionicons.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="password-generator">
+            <div class="left-side">
+
+                <div class="password-item">
+                    <label>Password </label>
+                    <input type="text" id="password" value="Your Password">
+                    <i class="ion-ios-copy-outline copy-password"></i>
+                </div>
+
+                <div class="length">
+                    <input type="range" min="1" max="20" value="5" class="slider" id="range-password">
+                    <span class="password-length">5</span>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div class="d-uppercase cb"><input type="checkbox" id="uppercase" name="uppercase"
+                        checked><label>Uppercase</label>
+                </div>
+                <div class="d-lowercase cb"><input type="checkbox" id="lowercase" name="lowercase"
+                        checked><label>Lowercase</label>
+                </div>
+                <div class="d-numbers cb"><input type="checkbox" id="numbers" name="numbers"
+                        checked><label>Numbers</label>
+                </div>
+                <div class="d-symbol cb"><input type="checkbox" id="symbols" name="symbols"
+                        checked><label>Symbols</label>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

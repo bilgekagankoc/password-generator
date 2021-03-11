@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+
+}
+
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background-color: rgba(0, 162, 255, 0.11);
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);  
+    width: 400px;
+    height: 200px;
+    box-shadow: -1px 0px 26px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+      
+}
+
+.password-generator{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    
+}
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.password-item{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.password-item input{
+    display: inline-block;
+    margin-top:10px;
+}
+.password-item i{
+    float: right;
+    margin-top:10px;
+    cursor: pointer;
+}
+/* #0075ff */
+.length{
+    position: relative;
+    padding-top: 50px;
+    padding-left: 10px;
+    display: flex;
+
+
+}
+.length input {
+    margin-right: 10px;
+    width: 200px;
+}
+
+.right-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right-side div input,
+.right-side div label {
+    float: left;
+    padding-left: 10px;
+
+}
+.right-side div input{
+    padding-top: 100px;
+
+}
+.right-side div{
+    padding-left: 50px;
+    padding-top: 10px;
+    display: flex;
+    align-items: baseline;
+}
+.right-side div:first-child{
+    padding-top: 30px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
+}
+input[type=text]{
+    border:none;
+    outline: none;
+    border:1px solid #000;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+
+::placeholder{
+    background-color:#fff;
+    color:#000;
+}
